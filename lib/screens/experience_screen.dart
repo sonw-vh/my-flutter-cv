@@ -27,7 +27,7 @@ class ExperienceScreen extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 30),
                 child: Text(
-                  'I have been participated in GDSC (university based community groups for students interested in Google Developers technologies) since July 2021 as a core member, contributed in human managing, building workshops and training program in multiple fields: mobile/website develop, design, marketing, leadership, etc. And in September 2022, I became one of 26 GDSC Vietnam Leads in the period of 2022 - 2023.',
+                  'I have been participated in GDSC (university based community groups for students interested in Google Developers technologies) since July 2021 as a core member, contributed in human managing, building workshops and training program in multiple fields: mobile/website develop, design, marketing, leadership, etc. And in September 2022, after some interviews with the Googlers, I became one of 26 GDSC Vietnam Leads in the period of 2022 - 2023.',
                   textAlign: TextAlign.justify,
                   style: Styles.textStyle,
                 ),
