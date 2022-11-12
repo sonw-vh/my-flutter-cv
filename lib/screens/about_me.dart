@@ -289,7 +289,7 @@ class AboutPage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(top: 10, left: 5, right: 5),
                       child: Text(
-                        "Despite he doesn't spent all of his attention on classes, he's still doing great job on his field and has a clear vision of his career path.",
+                        "Despite he doesn't spent all of his attention on classes, he's still doing great job on his field and has a clear vision of his career path. He has a wide knowledge about plenty of aspects in IT industry allowed him to be able to work in different positions. He knows exactly what he's doing.",
                         style: Styles.textStyle,
                         textAlign: TextAlign.justify,
                       ),
