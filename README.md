@@ -1,16 +1,18 @@
-# flutter_cv
+# 🔥 flutter_cv 🔥
 
-A new Flutter project.
+When deadline comes, everything goes sucks. But this is my CV anyway ✨
 
-## Getting Started
+## How to run it 🏃
 
-This project is a starting point for a Flutter application.
+This is the web version of it: https://cv-sonwday.web.app/.
 
-A few resources to get you started if this is your first Flutter project:
+But for best experience, plug-in a mobile device and turn on Command Prompt:
+```sh
+git clone https://github.com/sonw-vh/my-flutter-cv.git
+cd my-flutter-cv
+flutter run
+```
+or [Download .apk file of my CV](https://drive.google.com/file/d/1D_aEfo1Xvk2yLNHNOFYdMCCSrwgHEmdz/view?usp=share_link)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Please use the second way 💪😔 I wrote an app, not a web 📱
+"# my-flutter-cv" 
