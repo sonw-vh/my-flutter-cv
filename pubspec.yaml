@@ -62,6 +62,7 @@ flutter_icons:
   ios: true
   image_path: 'assets/icon/appicon.png'
   adaptive_icon_background: "#a3bfd6"
+  adaptive_icon_foreground: "assets/icon/appicon.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
