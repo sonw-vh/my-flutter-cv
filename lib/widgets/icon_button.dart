@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class UrlButton extends StatelessWidget {
-  final String buttonTitle;
+class UrlIconButton extends StatelessWidget {
+  final IconData iconType;
   final String urlString;
   final double buttonWidth;
   final Color buttonColor;
   final Color borderColor;
   
-  const UrlButton({super.key, required this.buttonTitle, required this.buttonColor, required this.borderColor, required this.buttonWidth, required this.urlString});
+  const UrlIconButton({super.key, required this.iconType, required this.buttonColor, required this.borderColor, required this.buttonWidth, required this.urlString});
 
   launchUrl(String url) async {
     if (await canLaunch(url)) {
@@ -23,7 +22,7 @@ class UrlButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: buttonWidth,
-      height: 40,
+      height: 21,
       child: Container(
         decoration: BoxDecoration(
           borderRadius: const BorderRadius.all(Radius.circular(90)),
@@ -43,12 +42,12 @@ class UrlButton extends StatelessWidget {
               borderRadius: BorderRadius.all(Radius.circular(90)),
             )
           ),
-          child: Text(
-            buttonTitle,
-            style:  GoogleFonts.josefinSans(
-              fontSize: 18,
-              fontWeight: FontWeight.w700,
+          child: Align(
+            alignment: Alignment.center,
+            child: Icon(
+              iconType,
               color: borderColor,
+              size: 14,
             ),
           ),
         ),

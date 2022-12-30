@@ -4,7 +4,7 @@ import 'package:flutter_cv/utils/app_styles.dart';
 import 'package:flutter_cv/utils/skill_tab.dart';
 import 'package:flutter_cv/utils/title_bar_light.dart';
 import 'package:flutter_cv/utils/title_tab.dart';
-import 'package:flutter_cv/widgets/social_button.dart';
+import 'package:flutter_cv/widgets/icon_button.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -58,20 +58,10 @@ class AboutPage extends StatelessWidget {
 
                         const Gap(7),
                         Row(
-                          children: const [
-                            SocialButton(urlString: 'https://facebook.com/sonw.vh/', iconType: FontAwesomeIcons.facebookF),
-
-                            Gap(7),
-                            SocialButton(urlString: 'https://www.linkedin.com/in/sonw-vh/', iconType: FontAwesomeIcons.linkedinIn),
-
-                            Gap(7),
-                            SocialButton(urlString: 'https://github.com/sonw-vh', iconType: FontAwesomeIcons.github),
-
-                            Gap(7),
-                            SocialButton(urlString: 'https://g.dev/sonw-day', iconType: Icons.code),
-
-                            Gap(7),
-                            SocialButton(urlString: 'https://www.youtube.com/channel/UCm011m7JdabnEFxxMeMZFVQ', iconType: FontAwesomeIcons.youtube),
+                          children: [
+                            UrlIconButton(iconType: FontAwesomeIcons.android, buttonColor: Styles.bgColor, borderColor: Styles.primaryColor, buttonWidth: 81, urlString: 'urlString'),
+                            const Gap(3),
+                            UrlIconButton(iconType: FontAwesomeIcons.googleDrive, buttonColor: Styles.bgColor, borderColor: Styles.primaryColor, buttonWidth: 81, urlString: 'urlString'),
                           ],
                         ),
 
@@ -143,7 +133,7 @@ class AboutPage extends StatelessWidget {
                   SkillTab(skillTitle: 'Penetration Testing', tabWidth: 155),
                   SkillTab(skillTitle: 'Internet of Things', tabWidth: 145),
                   SkillTab(skillTitle: 'Graphic Design', tabWidth: 135),
-                  SkillTab(skillTitle: 'Project Management', tabWidth: 155),
+                  SkillTab(skillTitle: 'Project Management', tabWidth: 165),
                   SkillTab(skillTitle: 'Human Resources', tabWidth: 140),
                   SkillTab(skillTitle: 'Content Creator', tabWidth: 140),
                 ],
@@ -161,7 +151,7 @@ class AboutPage extends StatelessWidget {
                 runSpacing: 7,
                 children: const [
                   SkillTab(skillTitle: 'Android Security', tabWidth: 140),
-                  SkillTab(skillTitle: 'DevOps', tabWidth: 75),
+                  SkillTab(skillTitle: 'DevOps', tabWidth: 85),
                   SkillTab(skillTitle: 'Mobile Forensics', tabWidth: 140),
                 ],
               ),

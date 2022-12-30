@@ -29,6 +29,20 @@ class PlatformScreen extends StatelessWidget {
               ),
               
               const Gap(3),
+              const TitleTab(titleText: 'DEVOPS', rightIndent: 160),
+              
+              const Gap(7),
+              const ProgressBar(titleText: 'Docker', percentText: '70%', percentBar: 0.7),
+              const ProgressBar(titleText: 'Kubernetes', percentText: '60%', percentBar: 0.6),
+              const ProgressBar(titleText: 'Jenkins', percentText: '60%', percentBar: 0.6),
+
+              Divider(
+                color: Styles.primaryColor,
+                height: 12,
+                thickness: 1,
+              ),
+              
+              const Gap(3),
               const TitleTab(titleText: 'UX/UI', rightIndent: 140),
               
               const Gap(7),

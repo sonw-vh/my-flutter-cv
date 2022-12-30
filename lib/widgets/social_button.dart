@@ -17,20 +17,34 @@ class SocialButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 24,
+    return SizedBox(
       width: 24,
-      decoration: BoxDecoration(
-        borderRadius: const BorderRadius.all(Radius.circular(90)),
-        color: Styles.primaryColor
-      ),
-      child: Align(
-        alignment: Alignment.center,
-        child: IconButton(onPressed: () {
+      height: 24,
+      child: ElevatedButton(
+        onPressed: () {
           String url = urlString; 
           launchUrl(url);
-        }, icon: Icon(iconType, color: Styles.bgColor, size: 12,), splashColor: Colors.transparent),
-      )
+        },
+        style: ElevatedButton.styleFrom(
+          backgroundColor: Styles.bgColor,
+          foregroundColor: Styles.bgColor,
+          elevation: 0,
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(50)),
+          )
+        ),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(
+              iconType,
+              color: Styles.primaryColor,
+              size: 7,
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

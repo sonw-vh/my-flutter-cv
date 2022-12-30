@@ -9,20 +9,35 @@ class SkillTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 24,
+    return SizedBox(
       width: tabWidth,
-      decoration: BoxDecoration(
-        color: Styles.primaryColor,
-        borderRadius: const BorderRadius.all(Radius.circular(90))
-      ),
-      child: Align(
-        alignment: Alignment.center,
-        child: Text(
-          skillTitle,
-          style: GoogleFonts.josefinSans(color: Styles.bgColor, fontSize: 14, fontWeight: FontWeight.w700,),
+      height: 24,
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: const BorderRadius.all(Radius.circular(90)),
+          color: Styles.primaryColor,
         ),
-      )
+        child: ElevatedButton(
+          onPressed: () {
+          },
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Styles.primaryColor,
+            foregroundColor: Styles.primaryColor,
+            elevation: 0,
+            shape: const RoundedRectangleBorder(
+              borderRadius: BorderRadius.all(Radius.circular(90)),
+            )
+          ),
+          child: Text(
+            skillTitle,
+            style:  GoogleFonts.josefinSans(
+              fontSize: 14,
+              fontWeight: FontWeight.w700,
+              color: Styles.bgColor,
+            ),
+          ),
+        ),
+      ),
     );
   }
 }

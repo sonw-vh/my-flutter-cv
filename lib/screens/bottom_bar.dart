@@ -5,6 +5,7 @@ import 'package:flutter_cv/screens/education_screen.dart';
 import 'package:flutter_cv/screens/experience_screen.dart';
 import 'package:flutter_cv/screens/platforms_screen.dart';
 import 'package:flutter_cv/utils/app_styles.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -35,10 +36,10 @@ class _BottomBarState extends State<BottomBar> {
   ];
 
   static final List<Widget> _titleOptions =<Widget>  [
-    Text('About Me', style: GoogleFonts.josefinSans(color: Colors.white, fontSize: 24, fontWeight: FontWeight.w700,),),
-    Text('Education', style: GoogleFonts.josefinSans(color: Colors.white, fontSize: 24, fontWeight: FontWeight.w700,),),
-    Text('Platforms', style: GoogleFonts.josefinSans(color: Colors.white, fontSize: 24, fontWeight: FontWeight.w700,),),
-    Text('Experience', style: GoogleFonts.josefinSans(color: Colors.white, fontSize: 24, fontWeight: FontWeight.w700,),),
+    Text('About Me', style: GoogleFonts.josefinSans(color: Colors.white, fontSize: 21, fontWeight: FontWeight.w700,),),
+    Text('Education', style: GoogleFonts.josefinSans(color: Colors.white, fontSize: 21, fontWeight: FontWeight.w700,),),
+    Text('Platforms', style: GoogleFonts.josefinSans(color: Colors.white, fontSize: 21, fontWeight: FontWeight.w700,),),
+    Text('Experience', style: GoogleFonts.josefinSans(color: Colors.white, fontSize: 21, fontWeight: FontWeight.w700,),),
   ];
 
   void _onItemTapped (int index)  {
@@ -53,21 +54,31 @@ class _BottomBarState extends State<BottomBar> {
       extendBody: true,
       appBar: AppBar(
         title: _titleOptions[_selectedIndex],
-        centerTitle: true,
+        titleSpacing: 28,
         toolbarHeight: 36,
         backgroundColor: Styles.primaryColor,
         shadowColor: Styles.p2Color,
-        leading: IconButton(onPressed: () {
-            String url = 'https://drive.google.com/file/d/1GcXGJze_z2R4mpCIovWVQta_96xnexK4/view?usp=share_link';
-            launchUrl(url);
-          }, icon: const Icon(Icons.folder), color: Styles.bgColor, iconSize: 21,
-        ),
 
         actions: [
           IconButton(onPressed: () {
-            String url = 'https://drive.google.com/file/d/1D_aEfo1Xvk2yLNHNOFYdMCCSrwgHEmdz/view?usp=share_link';
+            String url = 'https://facebook.com/sonw.vh/';
             launchUrl(url);
-          }, icon: const Icon(Icons.download), color: Styles.bgColor, iconSize: 21,)
+          }, icon: const Icon(FontAwesomeIcons.facebook), color: Styles.bgColor, iconSize: 18,),
+
+          IconButton(onPressed: () {
+            String url = 'https://www.linkedin.com/in/sonw-vh/';
+            launchUrl(url);
+          }, icon: const Icon(FontAwesomeIcons.linkedin), color: Styles.bgColor, iconSize: 18,),
+          
+          IconButton(onPressed: () {
+            String url = 'https://github.com/sonw-vh';
+            launchUrl(url);
+          }, icon: const Icon(FontAwesomeIcons.github), color: Styles.bgColor, iconSize: 18,),
+
+          IconButton(onPressed: () {
+            String url = 'https://g.dev/sonw-day';
+            launchUrl(url);
+          }, icon: const Icon(FontAwesomeIcons.dev), color: Styles.bgColor, iconSize: 18,),
         ],
       ),
 
