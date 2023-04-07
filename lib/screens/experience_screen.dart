@@ -47,7 +47,7 @@ class ExperienceScreen extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  UrlButton(buttonTitle: 'View certificate', buttonColor: Styles.bgColor, borderColor: Styles.primaryColor, buttonWidth: 165, urlString: 'https://drive.google.com/file/d/1o5I5EgIJ1rTy6X6XBLFdxE5uV9WB93GN/view?usp=share_link'),
+                  UrlButton(buttonTitle: 'View certificate', buttonColor: Styles.bgColor, borderColor: Styles.primaryColor, buttonWidth: 170, urlString: 'https://drive.google.com/file/d/1o5I5EgIJ1rTy6X6XBLFdxE5uV9WB93GN/view?usp=share_link'),
                   const Gap(12),
                   UrlButton(buttonTitle: 'View article', buttonColor: Styles.primaryColor, borderColor: Styles.bgColor, buttonWidth: 135, urlString: 'https://www.facebook.com/dscinvietnam/posts/pfbid02gfLWnTG7yrMFeX5E9jPuAfMyyLCTb7WHZatGcGspkmseBUG4SW5PnS1kGxkDFs1hl'),
                   
@@ -82,9 +82,9 @@ class ExperienceScreen extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  UrlButton(buttonTitle: 'View certificate', buttonColor: Styles.bgColor, borderColor: Styles.primaryColor, buttonWidth: 165, urlString: 'https://drive.google.com/file/d/18t11nRti4VZiOGq08gmI1XUNVTD8dKJV/view?usp=share_link'),
+                  UrlButton(buttonTitle: 'View certificate', buttonColor: Styles.bgColor, borderColor: Styles.primaryColor, buttonWidth: 170, urlString: 'https://drive.google.com/file/d/18t11nRti4VZiOGq08gmI1XUNVTD8dKJV/view?usp=share_link'),
                   const Gap(12),
-                  UrlButton(buttonTitle: 'View product', buttonColor: Styles.primaryColor, borderColor: Styles.bgColor, buttonWidth: 145, urlString: 'https://github.com/Ming-doan/LonDe'),
+                  UrlButton(buttonTitle: 'View product', buttonColor: Styles.primaryColor, borderColor: Styles.bgColor, buttonWidth: 150, urlString: 'https://github.com/Ming-doan/LonDe'),
                   
                   
                 ],

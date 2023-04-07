@@ -47,7 +47,7 @@ class AboutPage extends StatelessWidget {
                         
                         const Gap(3),
                         Text(
-                          'PROGRAMMING INTERN',
+                          'IT - Marketing - Event',
                           style: GoogleFonts.abhayaLibre(
                             color: Styles.textColor,
                             fontSize: 12.5,
@@ -59,9 +59,9 @@ class AboutPage extends StatelessWidget {
                         const Gap(7),
                         Row(
                           children: [
-                            UrlIconButton(iconType: FontAwesomeIcons.android, buttonColor: Styles.bgColor, borderColor: Styles.primaryColor, buttonWidth: 81, urlString: 'urlString'),
+                            UrlIconButton(iconType: FontAwesomeIcons.android, buttonColor: Styles.bgColor, borderColor: Styles.primaryColor, buttonWidth: 81, urlString: 'https://drive.google.com/file/d/1t0GKJNW7_jKtAE6uWRTCPgNNv1IyXL-L/view?usp=share_link'),
                             const Gap(3),
-                            UrlIconButton(iconType: FontAwesomeIcons.googleDrive, buttonColor: Styles.bgColor, borderColor: Styles.primaryColor, buttonWidth: 81, urlString: 'urlString'),
+                            UrlIconButton(iconType: FontAwesomeIcons.googleDrive, buttonColor: Styles.bgColor, borderColor: Styles.primaryColor, buttonWidth: 81, urlString: 'https://drive.google.com/file/d/1A3jBx9RL_TZTPxrrcw_cMKnsMgl7nnHY/view?usp=share_link'),
                           ],
                         ),
 
@@ -128,14 +128,14 @@ class AboutPage extends StatelessWidget {
                 spacing: 5,
                 runSpacing: 7,
                 children: const [
-                  SkillTab(skillTitle: 'Mobile Development', tabWidth: 160),
+                  SkillTab(skillTitle: 'Mobile Development', tabWidth: 175),
                   SkillTab(skillTitle: 'UX/UI', tabWidth: 75),
-                  SkillTab(skillTitle: 'Penetration Testing', tabWidth: 155),
-                  SkillTab(skillTitle: 'Internet of Things', tabWidth: 145),
-                  SkillTab(skillTitle: 'Graphic Design', tabWidth: 135),
-                  SkillTab(skillTitle: 'Project Management', tabWidth: 165),
-                  SkillTab(skillTitle: 'Human Resources', tabWidth: 140),
-                  SkillTab(skillTitle: 'Content Creator', tabWidth: 140),
+                  SkillTab(skillTitle: 'Penetration Testing', tabWidth: 165),
+                  SkillTab(skillTitle: 'Internet of Things', tabWidth: 155),
+                  SkillTab(skillTitle: 'Graphic Design', tabWidth: 145),
+                  SkillTab(skillTitle: 'Project Management', tabWidth: 175),
+                  SkillTab(skillTitle: 'Human Resources', tabWidth: 155),
+                  SkillTab(skillTitle: 'Content Creator', tabWidth: 145),
                 ],
               ),
 
@@ -150,9 +150,9 @@ class AboutPage extends StatelessWidget {
                 spacing: 5,
                 runSpacing: 7,
                 children: const [
-                  SkillTab(skillTitle: 'Android Security', tabWidth: 140),
+                  SkillTab(skillTitle: 'Android Security', tabWidth: 145),
                   SkillTab(skillTitle: 'DevOps', tabWidth: 85),
-                  SkillTab(skillTitle: 'Mobile Forensics', tabWidth: 140),
+                  SkillTab(skillTitle: 'Mobile Forensics', tabWidth: 145),
                 ],
               ),
 
